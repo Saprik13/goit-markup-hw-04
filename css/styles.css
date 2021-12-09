@@ -148,8 +148,15 @@ img {
 
 /* герой */
 .hero {
+  background-color: #212121;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/bg-1.jpg);
+  background-size: cover;
   text-align: center;
-  background-color: #2f303a;
+  background-repeat: no-repeat;
   padding: 200px 0;
 }
 
@@ -261,6 +268,9 @@ img {
 .team-unit {
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-title {
@@ -281,6 +291,21 @@ img {
 }
 /* ============================================ */
 
+/* клиенты */
+
+.clients {
+  margin-left: -30px;
+  display: flex;
+  wrap: wrap;
+}
+
+.cl-unit {
+  flex-basis: calc(100% / 6 - 30px);
+  margin-left: 30px;
+}
+
+/* ============================================ */
+
 /* страница ===портфолио===*/
 
 /* кнопки портфолио */
@@ -295,6 +320,8 @@ img {
 .button:hover,
 .button:focus {
   color: var(--accent-color);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .button:active {
   background-color: var(--accent-color);
@@ -329,10 +356,16 @@ img {
 }
 
 .item {
+  cursor: pointer;
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
 }
+.item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .port-txt {
   border: 1px solid #eeeeee;
   padding: 20px 24px;
