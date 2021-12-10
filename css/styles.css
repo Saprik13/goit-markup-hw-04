@@ -3,6 +3,7 @@
   --secondary-background-color: #f5f4fa;
   --primary-text-color: #757575;
   --accent-color: #2196f3;
+  --fill-main: #afb1b8;
   --primary-font: "Roboto";
   --secondary-font: "Raleway";
 }
@@ -286,7 +287,7 @@ img {
   background-color: var(--secondary-background-color);
 }
 .team-txt {
-  padding: 30px 0;
+  padding: 30px 32px;
 }
 
 .team {
@@ -296,6 +297,7 @@ img {
 }
 
 .team-unit {
+  background: #fff;
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -313,11 +315,52 @@ img {
 }
 
 .team-post {
+  margin-bottom: 16px;
   text-align: center;
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+}
+
+/* ===соцсети=== */
+.soc-btn {
+  display: flex;
+  justify-content: center;
+}
+.soc-unit {
+  display: flex;
+  justify-content: center;
+  margin-right: 22px;
+}
+.soc-unit:last-child {
+  margin-right: 0;
+}
+.soc-logo {
+  width: 20px;
+  height: 20px;
+  fill: var(--fill-main);
+}
+
+.soc-link {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+/* .класс-ссылки:hover .класс-иконки {
+  fill: нужный цвет; */
+
+.soc-link:hover,
+.soc-link:focus {
+  background-color: var(--accent-color);
+}
+.soc-link:hover .soc-logo,
+.soc-link:focus .soc-logo {
+  fill: #ffffff;
 }
 /* ============================================ */
 
@@ -343,16 +386,14 @@ img {
 .cl-logo {
   width: 106px;
   height: 60px;
-  fill: #afb1b8;
+  fill: var(--fill-main);
 }
-/* .класс-ссылки:hover .класс-иконки {
-  fill: нужный цвет; */
 
 .cl-link {
   width: 170px;
   height: 92px;
   padding: 16px 32px;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--fill-main);
   border-radius: 4px;
 }
 
@@ -449,14 +490,19 @@ img {
 
 /* ===футер=== */
 .footer {
+  display: flex;
+}
+.page-footer {
   background: #2f303a;
   padding: 60px 0;
 }
+
 .logo.logo-f {
   margin-bottom: 20px;
 }
 
 /* footer contacts  */
+
 .contacts-footer {
   font-size: 14px;
   line-height: 1.7;
@@ -479,4 +525,54 @@ img {
 .footer-item:last-child {
   margin-bottom: 0;
 }
+/* ===соцсети=== футера */
+.soc-title-ft {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.soc-btn-ft {
+  display: flex;
+}
+.soc-card-ft {
+  margin-left: 70px;
+}
+.soc-unit-ft {
+  display: flex;
+  justify-content: center;
+  margin-right: 10px;
+}
+.soc-unit-ft:last-child {
+  margin-right: 0;
+}
+.soc-logo-ft {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+}
+
+.soc-link-ft {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.soc-link-ft:hover,
+.soc-link-ft:focus {
+  background-color: var(--accent-color);
+}
+.soc-link-ft:hover .soc-logo-ft,
+.soc-link-ft:focus .soc-logo-ft {
+  fill: #ffffff;
+}
+/* ==================================== */
 /* =================== end of css ================== */
