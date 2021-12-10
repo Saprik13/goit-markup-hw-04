@@ -76,12 +76,20 @@ img {
 .main-nav {
   display: flex;
 }
+.contacts-ico {
+  margin-right: 10px;
+}
+.contacts-header:hover .contacts-ico,
+.contacts-header:focus .contacts-ico {
+  fill: var(--accent-color);
+}
 
 .header-info {
+  display: flex;
   margin-left: auto;
 }
-.site-nav,
-.header-info {
+
+.site-nav {
   display: flex;
 }
 
@@ -91,8 +99,12 @@ img {
 }
 
 .nav-item {
+  display: flex;
+  align-content: center;
   margin-right: 40px;
+  align-items: center;
 }
+
 .nav-item:last-child {
   margin-right: 0;
 }
@@ -108,6 +120,9 @@ img {
   letter-spacing: 0.02em;
 }
 .contacts-header {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   color: var(--primary-text-color);
 }
 
@@ -207,11 +222,18 @@ img {
 }
 
 .feat-ico {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 30px;
   width: 270px;
   height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
+}
+.feat-logo {
+  width: 70px;
+  height: 70px;
 }
 
 .title {
@@ -310,6 +332,9 @@ img {
   justify-content: center;
   margin-right: 30px;
 }
+.cl-link {
+  display: flex;
+}
 
 .cl-unit:last-child {
   margin-right: 0;
@@ -320,11 +345,8 @@ img {
   height: 60px;
   fill: #afb1b8;
 }
-
-.cl-logo:hover,
-.cl-logo:focus {
-  fill: var(--accent-color);
-}
+/* .класс-ссылки:hover .класс-иконки {
+  fill: нужный цвет; */
 
 .cl-link {
   width: 170px;
@@ -332,6 +354,11 @@ img {
   padding: 16px 32px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+}
+
+.cl-link:hover .cl-logo,
+.cl-link:focus .cl-logo {
+  fill: var(--accent-color);
 }
 .cl-link:hover,
 .cl-link:focus {
